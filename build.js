@@ -47,8 +47,6 @@ build().then(() => {
         return s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
     }
 
-    const now = Math.floor(Date.now() / 1000);
-
     let html = `<!DOCTYPE NETSCAPE-Bookmark-file-1>
 <!-- This is an automatically generated file.
      It will be read and overwritten.
@@ -57,12 +55,12 @@ build().then(() => {
 <TITLE>Bookmarks</TITLE>
 <H1>Bookmarks</H1>
 <DL><p>
-  <DT><H3 ADD_DATE="${now}" LAST_MODIFIED="${now}">${folderName}</H3>
+  <DT><H3>${folderName}</H3>
   <DL><p>
 `;
 
     for (const l of links) {
-        html += `    <DT><A HREF="${esc(l.href)}" ADD_DATE="${now}">${esc(l.title)}</A>\n`;
+        html += `    <DT><A HREF="${esc(l.href)}">${esc(l.title)}</A>\n`;
     }
 
     html += `  </DL><p>
