@@ -1,7 +1,7 @@
 # JSlets
 My personal bookmarklets
 
-## Instalation
+## Installation
 - Import `bookmarks.html` into your browser. Folder with all the bookmarklets named `jslets` will be created.
 - If updating to newer version, delete the previous `jslets` folder first.
 
