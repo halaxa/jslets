@@ -1,0 +1,2 @@
+# AGENTS
+See README.md.
