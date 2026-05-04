@@ -37,7 +37,7 @@ async function build() {
         fs.writeFileSync(path.join(DIST, file), wrapped);
 
         const title = name.replace(/_/g, ' ');
-        links.push({ title, href: wrapped, description });
+        links.push({ title, href: wrapped.trim(), description });
     }
 }
 
@@ -62,7 +62,7 @@ build().then(() => {
 `;
 
     for (const l of links) {
-        html += `    <DT><A HREF="${esc(l.href.trim())}" ADD_DATE="${now}">${esc(l.title)}</A>\n`;
+        html += `    <DT><A HREF="${esc(l.href)}" ADD_DATE="${now}">${esc(l.title)}</A>\n`;
     }
 
     html += `  </DL><p>
@@ -79,7 +79,7 @@ build().then(() => {
 
     let list = '\n';
     for (const l of links) {
-        list += `- **${l.title}**: ${l.description}\n`;
+        list += `- **${l.title}**: (<a href="${esc(l.href)}">▶ run</a>) ${l.description}\n`;
     }
     list += '\n';
 
