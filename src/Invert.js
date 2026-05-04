@@ -1,4 +1,4 @@
-// Inverts the page colors with some sane defaults. Useful for dark mode. It's pure invert - it also brightens UI which is dark.
+// Inverts the page colors with some sane defaults. Useful for dark mode. It's pure css invert - it also brightens UI which is dark.
 let style = document.querySelector('html').style;
 if (!style.backgroundColor) style.backgroundColor = '#fff';
 let imgs = document.querySelectorAll('img');
