@@ -77,7 +77,7 @@ build().then(() => {
 
     let list = '\n';
     for (const l of links) {
-        list += '- **'+l.title+'**: '+l.description+'\n\n```javascript\n'+l.href+'\n```\n\n';
+        list += '### '+l.title+'\n'+l.description+'\n\n```javascript\n'+l.href+'\n```\n\n';
     }
     list += '\n';
 
