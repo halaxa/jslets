@@ -4,7 +4,7 @@ My personal bookmarklets. When an extension is unnecessary.
 ## Installation
 Install all by importing `bookmarks.html` into your browser. Folder with all the bookmarklets named `jslets` will be created. If updating to newer version, delete the previous `jslets` folder first. 
 
-Or install individually by copy/pasting the ones below.
+Or install individually by copy/pasting the ones below to your browser's favorites.
 
 ## Available bookmarklets
 ### Invert
