@@ -77,7 +77,7 @@ build().then(() => {
 
     let list = '\n';
     for (const l of links) {
-        list += `- **${l.title}**: (<a href="${esc(l.href)}">▶ run</a>) ${l.description}\n`;
+        list += `- **${l.title}**: ${l.description}\n`;
     }
     list += '\n';
 
