@@ -7,7 +7,7 @@ const DIST = path.join(__dirname, 'dist');
 
 if (!fs.existsSync(DIST)) fs.mkdirSync(DIST);
 
-const folderName = `bmlets`;
+const folderName = `jslets`;
 
 // --- zpracování ---
 const files = fs.readdirSync(SRC).filter(f => f.endsWith('.js'));
